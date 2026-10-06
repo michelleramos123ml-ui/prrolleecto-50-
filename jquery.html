@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MIMI'S | jQuery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <span>M</span>IMI'S
+            <small>CALZADO</small>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="jquery.html" class="activo">jQuery</a>
+            <a href="json.html">JSON</a>
+            <a href="hosting.html">Hosting y Dominios</a>
+            <a href="cuestionario.html">Cuestionario</a>
+        </nav>
+
+    </header>
+
+
+    <main class="pagina">
+
+        <section class="encabezado-pagina">
+
+            <p class="etiqueta">TECNOLOGÍA WEB</p>
+
+            <h1>jQuery</h1>
+
+            <p>
+                Biblioteca de JavaScript creada para simplificar
+                determinadas tareas del desarrollo web.
+            </p>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>¿Qué es jQuery?</h2>
+
+            <p>
+                jQuery es una biblioteca de JavaScript que proporciona
+                una sintaxis sencilla para realizar tareas como
+                seleccionar elementos HTML, manejar eventos, modificar
+                contenido y crear efectos visuales.
+            </p>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>Sintaxis básica</h2>
+
+            <p>
+                Una de las características principales de jQuery
+                es el uso del símbolo <strong>$</strong> para
+                seleccionar elementos.
+            </p>
+
+            <pre><code>$("#boton").click(function() {
+    alert("Mensaje desde jQuery");
+});</code></pre>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>JavaScript vs. jQuery</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>JavaScript</th>
+                        <th>jQuery</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>document.getElementById("caja")</td>
+                        <td>$("#caja")</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lenguaje de programación</td>
+                        <td>Biblioteca de JavaScript</td>
+                    </tr>
+
+                    <tr>
+                        <td>No requiere una biblioteca externa</td>
+                        <td>Requiere cargar jQuery</td>
+                    </tr>
+
+                    <tr>
+                        <td>JavaScript moderno ofrece muchas funciones propias</td>
+                        <td>Puede simplificar algunas tareas</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>Ejemplo de efecto</h2>
+
+            <p>
+                El siguiente ejemplo utiliza el efecto
+                <strong>slideToggle()</strong>.
+            </p>
+
+            <div id="ejemploJquery">
+                MIMI'S — Calzado con estilo y comodidad.
+            </div>
+
+            <button id="botonJquery" class="btn-principal">
+                Mostrar / Ocultar
+            </button>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>Ventajas y desventajas</h2>
+
+            <div class="comparacion">
+
+                <div>
+                    <h3>Ventajas</h3>
+
+                    <p>
+                        Facilita algunas tareas, utiliza una sintaxis
+                        sencilla y permite implementar efectos de
+                        manera práctica.
+                    </p>
+
+                </div>
+
+                <div>
+                    <h3>Desventajas</h3>
+
+                    <p>
+                        Algunas funciones que antes requerían jQuery
+                        ahora pueden realizarse directamente con
+                        JavaScript moderno.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="fuentes">
+
+            <h2>Fuentes consultadas</h2>
+
+            <p>
+                jQuery Documentation, MDN Web Docs y W3Schools.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="logo-footer">MIMI'S</div>
+
+        <p>Proyecto académico de desarrollo web</p>
+
+        <p class="copyright">
+            © 2026 MIMI'S
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        $(document).ready(function() {
+
+            $("#botonJquery").click(function() {
+
+                $("#ejemploJquery").slideToggle();
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

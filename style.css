@@ -1,0 +1,1336 @@
+/* ==================================================
+   MIMI'S - HOJA DE ESTILOS PRINCIPAL
+   Proyecto académico de desarrollo web
+   ================================================== */
+
+
+/* -----------------------------------------------
+   CONFIGURACIÓN GENERAL
+   ----------------------------------------------- */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+:root {
+
+    --cafe: #5A3525;
+
+    --terracota: #B85C38;
+
+    --durazno: #E8A07A;
+
+    --crema: #FFF4E6;
+
+    --beige: #F5E4D3;
+
+    --blanco: #FFFFFF;
+
+    --texto: #3C2921;
+
+    --gris: #75665F;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background-color: var(--crema);
+
+    color: var(--texto);
+
+    line-height: 1.7;
+
+}
+
+
+/* -----------------------------------------------
+   ENCABEZADO
+   ----------------------------------------------- */
+
+.header {
+
+    width: 100%;
+
+    min-height: 85px;
+
+    padding: 15px 7%;
+
+    background-color: var(--blanco);
+
+    border-bottom: 1px solid #ead8c8;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(90, 53, 37, 0.08);
+
+}
+
+
+/* -----------------------------------------------
+   LOGOTIPO
+   ----------------------------------------------- */
+
+.logo {
+
+    color: var(--cafe);
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    line-height: 1;
+
+}
+
+
+.logo span {
+
+    color: var(--terracota);
+
+}
+
+
+.logo small {
+
+    display: block;
+
+    color: var(--gris);
+
+    font-size: 8px;
+
+    letter-spacing: 5px;
+
+    text-align: center;
+
+    margin-top: 5px;
+
+}
+
+
+/* -----------------------------------------------
+   NAVEGACIÓN
+   ----------------------------------------------- */
+
+.navbar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.navbar a {
+
+    color: var(--cafe);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    padding: 9px 13px;
+
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.navbar a:hover {
+
+    color: var(--terracota);
+
+    background-color: var(--crema);
+
+}
+
+
+.navbar a.activo {
+
+    color: var(--blanco);
+
+    background-color: var(--terracota);
+
+}
+
+
+/* -----------------------------------------------
+   HERO
+   ----------------------------------------------- */
+
+.hero {
+
+    min-height: 600px;
+
+    padding: 80px 10%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+
+    background:
+
+        linear-gradient(
+
+            120deg,
+
+            var(--crema),
+
+            #f6d6c1
+
+        );
+
+}
+
+
+.hero-contenido {
+
+    max-width: 650px;
+
+}
+
+
+.etiqueta {
+
+    color: var(--terracota);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.hero h1 {
+
+    color: var(--cafe);
+
+    font-size: clamp(65px, 10vw, 120px);
+
+    line-height: 0.95;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h2 {
+
+    color: var(--texto);
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h2 span {
+
+    color: var(--terracota);
+
+    font-weight: 700;
+
+}
+
+
+.hero-descripcion {
+
+    max-width: 570px;
+
+    color: var(--gris);
+
+    margin-bottom: 30px;
+
+    font-size: 17px;
+
+}
+
+
+/* -----------------------------------------------
+   BOTONES
+   ----------------------------------------------- */
+
+.btn-principal {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: var(--terracota);
+
+    color: var(--blanco);
+
+    border: none;
+
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.btn-principal:hover {
+
+    background-color: var(--cafe);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 15px rgba(90, 53, 37, 0.2);
+
+}
+
+
+/* -----------------------------------------------
+   PRODUCTO PRINCIPAL
+   ----------------------------------------------- */
+
+.hero-producto {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.circulo-producto {
+
+    width: 330px;
+
+    height: 330px;
+
+    border-radius: 50%;
+
+    background-color: var(--cafe);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+
+        0 20px 40px rgba(90, 53, 37, 0.25),
+
+        inset 0 0 0 18px rgba(255, 255, 255, 0.08);
+
+}
+
+
+.zapato {
+
+    width: 190px;
+
+    height: 80px;
+
+    background-color: var(--terracota);
+
+    border-radius: 80px 70px 30px 20px;
+
+    color: var(--blanco);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    transform: rotate(-12deg);
+
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* -----------------------------------------------
+   SECCIONES
+   ----------------------------------------------- */
+
+.seccion {
+
+    padding: 90px 8%;
+
+}
+
+
+.titulo-seccion {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
+}
+
+
+.titulo-seccion h2 {
+
+    color: var(--cafe);
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.titulo-seccion > p:last-child {
+
+    color: var(--gris);
+
+}
+
+
+/* -----------------------------------------------
+   TARJETAS
+   ----------------------------------------------- */
+
+.tarjetas {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.tarjeta {
+
+    background-color: var(--blanco);
+
+    padding: 35px;
+
+    border: 1px solid #ead8c8;
+
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.tarjeta:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 30px rgba(90, 53, 37, 0.12);
+
+}
+
+
+.icono {
+
+    color: var(--terracota);
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+
+}
+
+
+.tarjeta h3 {
+
+    color: var(--cafe);
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.tarjeta p {
+
+    color: var(--gris);
+
+}
+
+
+/* -----------------------------------------------
+   PALETA DE COLORES
+   ----------------------------------------------- */
+
+.colores-seccion {
+
+    background-color: var(--beige);
+
+}
+
+
+.paleta {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.color-item {
+
+    text-align: center;
+
+}
+
+
+.muestra {
+
+    width: 100%;
+
+    height: 130px;
+
+    border-radius: 7px;
+
+    margin-bottom: 15px;
+
+    box-shadow: 0 8px 15px rgba(90, 53, 37, 0.12);
+
+}
+
+
+.color-item h3 {
+
+    color: var(--cafe);
+
+    margin-bottom: 5px;
+
+}
+
+
+.color-item strong {
+
+    color: var(--terracota);
+
+}
+
+
+.color-item p {
+
+    color: var(--gris);
+
+    font-size: 13px;
+
+    margin-top: 8px;
+
+}
+
+
+.cafe {
+
+    background-color: #5A3525;
+
+}
+
+
+.terracota {
+
+    background-color: #B85C38;
+
+}
+
+
+.durazno {
+
+    background-color: #E8A07A;
+
+}
+
+
+.crema {
+
+    background-color: #FFF4E6;
+
+}
+
+
+/* -----------------------------------------------
+   TECNOLOGÍAS
+   ----------------------------------------------- */
+
+.tecnologias {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+
+.tecnologias a {
+
+    background-color: var(--cafe);
+
+    color: var(--blanco);
+
+    padding: 15px 25px;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+
+}
+
+
+.tecnologias a:hover {
+
+    background-color: var(--terracota);
+
+}
+
+
+/* -----------------------------------------------
+   PÁGINAS INFORMATIVAS
+   ----------------------------------------------- */
+
+.pagina {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 70px 30px;
+
+}
+
+
+.encabezado-pagina {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 55px;
+
+}
+
+
+.encabezado-pagina h1 {
+
+    color: var(--cafe);
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.encabezado-pagina p:last-child {
+
+    color: var(--gris);
+
+    font-size: 17px;
+
+}
+
+
+.contenido-info {
+
+    background-color: var(--blanco);
+
+    padding: 35px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid #ead8c8;
+
+    border-radius: 8px;
+
+    box-shadow: 0 5px 15px rgba(90, 53, 37, 0.06);
+
+}
+
+
+.contenido-info h2 {
+
+    color: var(--cafe);
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contenido-info h3 {
+
+    color: var(--terracota);
+
+    margin-bottom: 8px;
+
+}
+
+
+.contenido-info p {
+
+    color: var(--gris);
+
+    margin-bottom: 15px;
+
+}
+
+
+/* -----------------------------------------------
+   COMPARACIONES
+   ----------------------------------------------- */
+
+.comparacion {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.comparacion > div {
+
+    padding: 25px;
+
+    background-color: var(--crema);
+
+    border-left: 4px solid var(--terracota);
+
+}
+
+
+/* -----------------------------------------------
+   LISTA DE CONCEPTOS
+   ----------------------------------------------- */
+
+.lista-conceptos {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.lista-conceptos > div {
+
+    padding: 20px;
+
+    background-color: var(--crema);
+
+    border-radius: 5px;
+
+}
+
+
+.lista-conceptos strong {
+
+    color: var(--terracota);
+
+    font-size: 18px;
+
+}
+
+
+/* -----------------------------------------------
+   CÓDIGO
+   ----------------------------------------------- */
+
+pre {
+
+    background-color: #241914;
+
+    color: #f9dfcf;
+
+    padding: 25px;
+
+    border-radius: 6px;
+
+    overflow-x: auto;
+
+    margin: 20px 0;
+
+}
+
+
+code {
+
+    font-family: Consolas, "Courier New", monospace;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* -----------------------------------------------
+   TABLAS
+   ----------------------------------------------- */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+
+th,
+td {
+
+    padding: 15px;
+
+    border: 1px solid #dfc8b7;
+
+    text-align: left;
+
+}
+
+
+th {
+
+    background-color: var(--cafe);
+
+    color: var(--blanco);
+
+}
+
+
+td {
+
+    background-color: #fffaf5;
+
+}
+
+
+/* -----------------------------------------------
+   EJEMPLO JQUERY
+   ----------------------------------------------- */
+
+#ejemploJquery {
+
+    background-color: var(--beige);
+
+    border-left: 5px solid var(--terracota);
+
+    padding: 25px;
+
+    margin: 20px 0;
+
+    font-weight: 700;
+
+    color: var(--cafe);
+
+}
+
+
+/* -----------------------------------------------
+   EJEMPLO JSON
+   ----------------------------------------------- */
+
+.codigo-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+.producto-datos {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background-color: var(--beige);
+
+    border-left: 5px solid var(--terracota);
+
+}
+
+
+.producto-datos h3 {
+
+    font-size: 23px;
+
+}
+
+
+/* -----------------------------------------------
+   HOSTING Y DOMINIOS
+   ----------------------------------------------- */
+
+.flujo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin: 30px 0;
+
+}
+
+
+.flujo div {
+
+    padding: 15px 22px;
+
+    background-color: var(--cafe);
+
+    color: var(--blanco);
+
+    border-radius: 5px;
+
+    font-weight: 700;
+
+}
+
+
+.flujo span {
+
+    color: var(--terracota);
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+}
+
+
+.dominio-ejemplo {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 18px 30px;
+
+    background-color: var(--cafe);
+
+    color: var(--blanco);
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    border-radius: 5px;
+
+}
+
+
+/* -----------------------------------------------
+   FUENTES
+   ----------------------------------------------- */
+
+.fuentes {
+
+    background-color: var(--beige);
+
+    padding: 25px 30px;
+
+    border-left: 5px solid var(--terracota);
+
+    margin-top: 30px;
+
+}
+
+
+.fuentes h2 {
+
+    color: var(--cafe);
+
+    margin-bottom: 8px;
+
+}
+
+
+/* -----------------------------------------------
+   CUESTIONARIO
+   ----------------------------------------------- */
+
+.pregunta {
+
+    background-color: var(--blanco);
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ead8c8;
+
+    border-radius: 8px;
+
+}
+
+
+.pregunta h3 {
+
+    color: var(--cafe);
+
+    font-size: 18px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.pregunta label {
+
+    display: block;
+
+    padding: 12px 15px;
+
+    margin: 7px 0;
+
+    border: 1px solid #ead8c8;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.pregunta label:hover {
+
+    background-color: var(--crema);
+
+    border-color: var(--durazno);
+
+}
+
+
+.pregunta input {
+
+    margin-right: 10px;
+
+}
+
+
+.resultado {
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background-color: var(--beige);
+
+    border-left: 6px solid var(--terracota);
+
+    border-radius: 6px;
+
+    text-align: center;
+
+}
+
+
+.resultado h3 {
+
+    color: var(--cafe);
+
+    margin-bottom: 10px;
+
+}
+
+
+.resultado.aviso {
+
+    background-color: #f8e4d5;
+
+}
+
+
+/* -----------------------------------------------
+   PIE DE PÁGINA
+   ----------------------------------------------- */
+
+.footer {
+
+    background-color: var(--cafe);
+
+    color: var(--blanco);
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    margin-top: 50px;
+
+}
+
+
+.logo-footer {
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.footer p {
+
+    opacity: 0.85;
+
+}
+
+
+.footer .copyright {
+
+    margin-top: 15px;
+
+    font-size: 12px;
+
+    opacity: 0.6;
+
+}
+
+
+/* -----------------------------------------------
+   DISEÑO RESPONSIVO
+   ----------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .header {
+
+        flex-direction: column;
+
+    }
+
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .hero-producto {
+
+        margin-top: 20px;
+
+    }
+
+
+    .tarjetas,
+    .comparacion,
+    .lista-conceptos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .paleta {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .codigo-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .navbar a {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+
+    .hero {
+
+        padding: 60px 25px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 65px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .circulo-producto {
+
+        width: 250px;
+
+        height: 250px;
+
+    }
+
+
+    .paleta {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .pagina {
+
+        padding: 50px 18px;
+
+    }
+
+
+    .encabezado-pagina h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .contenido-info {
+
+        padding: 25px 20px;
+
+    }
+
+}

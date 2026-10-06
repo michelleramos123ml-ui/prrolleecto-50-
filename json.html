@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MIMI'S | JSON</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <span>M</span>IMI'S
+            <small>CALZADO</small>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="jquery.html">jQuery</a>
+            <a href="json.html" class="activo">JSON</a>
+            <a href="hosting.html">Hosting y Dominios</a>
+            <a href="cuestionario.html">Cuestionario</a>
+        </nav>
+
+    </header>
+
+
+    <main class="pagina">
+
+        <section class="encabezado-pagina">
+
+            <p class="etiqueta">TECNOLOGÍA WEB</p>
+
+            <h1>JSON</h1>
+
+            <p>
+                Formato utilizado para almacenar e intercambiar
+                información entre aplicaciones.
+            </p>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>¿Qué es JSON?</h2>
+
+            <p>
+                JSON significa <strong>JavaScript Object Notation</strong>.
+                Es un formato de texto utilizado para representar
+                información de manera organizada y fácil de interpretar
+                por diferentes aplicaciones.
+            </p>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>Estructura de JSON</h2>
+
+            <p>
+                JSON utiliza principalmente objetos, arreglos y pares
+                de clave-valor para organizar los datos.
+            </p>
+
+            <pre><code>{
+    "nombre": "MIMI'S Classic",
+    "precio": 35,
+    "categoria": "Calzado",
+    "disponible": true
+}</code></pre>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>Objeto JavaScript y cadena JSON</h2>
+
+            <div class="codigo-grid">
+
+                <div>
+
+                    <h3>Objeto JavaScript</h3>
+
+                    <pre><code>const producto = {
+    nombre: "MIMI'S Classic",
+    precio: 35,
+    disponible: true
+};</code></pre>
+
+                </div>
+
+
+                <div>
+
+                    <h3>JSON</h3>
+
+                    <pre><code>{
+    "nombre": "MIMI'S Classic",
+    "precio": 35,
+    "disponible": true
+}</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>JSON en aplicaciones web</h2>
+
+            <p>
+                Las aplicaciones web utilizan JSON para enviar y
+                recibir información entre el navegador y un servidor.
+                Por ejemplo, una tienda en línea podría solicitar
+                mediante una API la información de sus productos,
+                precios y disponibilidad.
+            </p>
+
+        </section>
+
+
+        <section class="contenido-info">
+
+            <h2>Ejemplo aplicado a MIMI'S</h2>
+
+            <p>
+                Presiona el botón para visualizar información
+                almacenada en un objeto JavaScript.
+            </p>
+
+            <button class="btn-principal" onclick="mostrarProducto()">
+                Mostrar producto
+            </button>
+
+            <div id="productoJSON"></div>
+
+        </section>
+
+
+        <section class="fuentes">
+
+            <h2>Fuentes consultadas</h2>
+
+            <p>
+                MDN Web Docs, JSON.org y W3Schools.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="logo-footer">MIMI'S</div>
+
+        <p>Proyecto académico de desarrollo web</p>
+
+        <p class="copyright">
+            © 2026 MIMI'S
+        </p>
+
+    </footer>
+
+</body>
+</html>
